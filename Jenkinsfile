@@ -9,7 +9,7 @@ node {
         }
     }
     stage('Push image') {
-        withDockerRegistry([ credentialsId: "dockerhub_id ]) {
+        withDockerRegistry([ credentialsId: "dockerhub_id ]){
             dockerImage.push()
             dockerImage.push('latest')
         }
